@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/contact_confirm_delete.css' %}">
+{% endblock css %}
+
+
+{% block create %}
+<div class="absolute" style="left: 3.5%; top: 4%">
+    <a href="{% url 'contact:list' %}" class="username">@{{ request.user.username }}</a>
+</div>
+<div class="absolute" style="left: 85%; top: 5%">
+    <a href="{% url 'contact:list' %}" id="auth"style="padding-top: 2px;">Home</a>
+    <a href="{% url 'logout' %}" id="auth" style="padding-top: 2px;">
+        Log Out
+    </a>
+</div>
+{% endblock create %}
+
+
+{% block body %}
+<div class="alert-message">
+    <div class="alert-message-text">
+        Are you want to delete it?
+    </div>
+    <div>
+        <form class="delete-form" method="post">
+            {% csrf_token %}
+            <input id="delete-btn" type="submit" value="Delete">
+            <a id="cancel-btn" href="{% url 'contact:list' %}">Cancel</a>
+        </form>
+    </div>
+</div>
+{% endblock body %}

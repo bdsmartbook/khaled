@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+{% endblock css %}
+
+{% block body %}
+<div class="box">
+    <div class="title">
+        Profile
+    </div>
+    <div class="body">
+        <div class="user-detail-list">
+            <div class="flex user-detail">
+                <div class="username">Username:</div>
+                <div>{{ request.user.username }}</div>
+            </div>
+            <div class="flex user-detail">
+                <div class="email">Email:</div>
+                <div>{{ request.user.email }}</div>
+            </div>
+        </div>
+        <div class="change-password">
+            <a href="{% url 'password_change' %}" class="change-password-text">Change Password</a>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

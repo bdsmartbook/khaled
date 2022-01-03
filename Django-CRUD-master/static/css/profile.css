@@ -1,0 +1,54 @@
+body {
+    background: #5a748d;
+}
+.box {
+    margin: 3rem 20rem 1rem;
+    background-color: #437eb5;
+}
+.title {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+}
+.body {
+    padding: 2rem 0;
+}
+a {
+    text-decoration: none;
+}
+.user-detail-list {
+    font-size: 16pt;
+    padding: .5rem 0 2rem 10rem;
+}
+.user-detail {
+    padding: 3.5px 0;
+}
+.username {
+    margin-right: 2.75rem;
+}
+.email {
+    margin-right: 4.25rem;
+}
+.flex {
+    display: flex;
+}
+.change-password {
+    text-align: center;
+    padding-top: 5px;
+}
+.change-password-text {
+    padding: 6px 15px;
+    width: auto;
+    font-size: 12pt;
+    background-color: #348541;
+    color: white;
+}
+.change-password-text:hover {
+    background-color: #1e662a;
+}
+.change-password-text:focus {
+    background-color: #2caa41;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+</head>
+<body>
+    <div style="top: 5%;left: 85%; position: absolute; display: flex;">
+        <a href="{% url 'contact:list' %}" id="not-auth">Home</a>
+        <a href="{% url 'login' %}" id="not-auth">Log In</a>
+    </div>
+    <div class="block">
+        <div class="signup-tab">SIGN UP FORM</div>
+        <form method="post" class="form">
+            {% csrf_token %}
+            {% for field in form %}
+            <div class="form-item">
+                {{ field.errors }}
+                {{ field.label_tag }} 
+                {{ field }}
+            </div>
+            {% endfor %}
+            <div class="signup">
+                <input class="signup-text" type="submit" value="Sign up">
+            </div>
+        </form>
+    </div>
+    <div style="position: absolute; top: 80%; left: 40%; font-size: 16pt;">
+        Created by <span style="font-weight: bold;">Kazi MD Khaled Nur</span>
+    </div>
+</body>
+</html>

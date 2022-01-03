@@ -1,0 +1,72 @@
+body {
+    background: #5a748d;
+}
+.title {
+    margin-top: 4vh;
+    text-align: center;
+    color: white;
+    font-size: 30pt;
+    letter-spacing: 1.5pt;
+    font-style: italic;
+    font-weight: 600;
+}
+.box {
+    margin: auto;
+    padding: 2vh 0;
+    width: 40vw;
+    text-align: left;
+    border-radius: .5rem;
+}
+.form-create {
+    background-color: #437eb5;
+    padding: 1rem;
+    padding-left: 6rem;
+}
+.input-create {
+    width: 60%;
+    padding: 6px 10px;
+    outline: none;
+    border-radius: .25rem;
+    border: none
+}
+.form-item {
+    margin: 10px 0;
+    display: block;
+    font-size: 16pt;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+.submit {
+    margin: 2vh 9.5vw 0 9.5vw;
+    padding: .40rem 2rem;
+    width: auto;
+    text-align: center;
+    font-size: initial;
+    border-radius: 1rem;
+    background: green;
+    color: white;
+    border: none;
+}
+.submit:hover {
+    background: #2e5c31;
+}
+.submit:focus {
+    background: #74c779;
+}
+.delete {
+    width: auto;
+    font-size: 13pt;
+    font-weight: 600;
+    padding: 6px 15px;
+    background: red;
+    color: white;
+    border-radius: .4rem;
+}
+.delete:hover {
+    background: #9b1309;
+}
+.delete:focus {
+    background: #ee7979;
+}

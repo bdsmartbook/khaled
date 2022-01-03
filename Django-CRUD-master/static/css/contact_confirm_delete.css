@@ -1,0 +1,52 @@
+body {
+    background: #5a748d;
+}
+.alert-message {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 80vh;
+    background: #437eb5;
+    padding: 2rem 1rem;
+    border-radius: .5rem;
+}
+.alert-message-text {
+    font-size: 30pt;
+}
+a {
+    text-decoration: none;
+}
+.delete-form {
+    padding-top: 1rem;
+}
+#delete-btn {
+    font-size: 15pt;
+    background-color: red;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 6px 12px;
+    border-radius: .25rem;
+}
+#delete-btn:hover {
+    background: #9b1309;
+}
+#delete-btn:focus {
+    background: #ee7979;
+}
+#cancel-btn {
+    margin-left: .5rem;
+    font-size: 15pt;
+    background-color: green;
+    color: white;
+    padding: 6px 12px;
+    border-radius: .25rem;
+}
+#cancel-btn:hover {
+    background: #2e5c31;
+}
+#cancel-btn:focus {
+    background: #74c779;
+}

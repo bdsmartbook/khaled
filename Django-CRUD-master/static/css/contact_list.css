@@ -1,0 +1,84 @@
+.title {
+    margin-top: 4vh;
+    text-align: center;
+    color: white;
+    font-size: 30pt;
+    letter-spacing: 1.5pt;
+    font-style: italic;
+    font-weight: 600;
+}
+.table {
+    margin: auto;
+    margin-top: 2.5vh;
+    margin-bottom: 5vh;
+    width: 62vw;
+    text-align: center;
+    background: #4e88bf;
+}
+table {
+    border-collapse: collapse;
+}
+#table-header-list {
+    font-size: 18pt;
+    background-color: #437eb5;
+}
+.table-header{
+    padding: 2vh 0;
+}
+#name {
+    width: 24vw;
+}
+#phone {
+    width: 16vw;
+}
+#email {
+    width: 18vw;
+}
+#delete {
+    width: 4vw;
+}
+.delete-icon:hover{
+    color: #9b1309;
+}
+.delete-icon:focus {
+    color: #e97979
+}
+td {
+    padding: 1.5vh 0;
+}
+tr:nth-child(even) {
+    background-color: #90a1b1;
+}
+tr:nth-child(odd) {
+    background-color: #7a90a5;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+#add-contact {
+    padding-top: 8px;
+    padding-bottom: 1px;
+    padding-right: 9px;
+    padding-left: 5px;
+    display: flex;
+    background: #839eb8;
+    border-radius: .5rem;
+}
+#add-contact:hover {
+    background: #8194a7;
+}
+#add-contact:focus {
+    background: #6a7f94;
+}
+.button-svg {
+    padding: 0 2px 0 0;
+}
+.button-text {
+    padding: 2.5px 0 0 0;
+    color: white;
+}
+.contact-message{
+    padding: 2rem .5rem;
+    font-size: 50pt;
+}

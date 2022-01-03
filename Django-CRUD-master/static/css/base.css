@@ -1,0 +1,41 @@
+body {
+    background: #5a748d;
+}
+.absolute{
+    display: flex;
+    position: absolute;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.username {
+    color: black;
+    font-size: 14pt;
+}
+#auth {
+    margin-left: 12px;
+    padding: 9px 8px 2px 8px;
+    border-radius: .5rem;
+    background: #839eb8;
+    color: white;
+}
+#auth:hover {
+    background: #8194a7;
+}
+#auth:focus {
+    background: #6a7f94;
+}
+#not-auth {
+    margin-left: 12px;
+    padding: 8px 10px;
+    border-radius: .5rem;
+    background: #839eb8;
+    color: white;
+}
+#not-auth:hover {
+    background: #798d9e;
+}
+#not-auth:focus {
+    background: #b3bbc2;
+}
